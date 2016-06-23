@@ -146,7 +146,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        
         Log.d(TAG, "onSaveInstanceState");
         outState.putInt(ConstantManager.COLOR_MODE_KEY, mColorMode);
     }
