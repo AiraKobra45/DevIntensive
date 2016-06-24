@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">DevIntensive</string>
+    <string name="app_name">Юрий Владимирович</string>
+    <string name="main_layout_text">Hello DevIntensive!</string>
+    <string name="red_button_text">Red Btn</string>
+    <string name="green_button_name">Green Btn</string>
 </resources>
