@@ -71,7 +71,6 @@
                     android:hint="@string/layout_hint_text"/>
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
-        
         <ImageView
             android:layout_width="@dimen/size_small_24"
             android:layout_height="@dimen/size_small_24"
