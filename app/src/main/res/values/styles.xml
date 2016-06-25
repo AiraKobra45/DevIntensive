@@ -59,10 +59,10 @@
         <item name="android:orientation">vertical</item>
     </style>
     <style name="header_left_side" parent="header_center">
-        <item name="android:layout_marginLeft">@dimen/spacing_normal_16</item>
+        <item name="android:layout_marginRight">@dimen/spacing_small_8</item>
     </style>
     <style name="header_right_side" parent="header_center">
-        <item name="android:layout_marginRight">@dimen/spacing_normal_16</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_small_8</item>
     </style>
     <style name="view_separator_vertical">
         <item name="android:layout_height">match_parent</item>
