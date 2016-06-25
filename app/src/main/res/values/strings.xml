@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Юрий Владимирович</string>
+    <string name="app_name">Юрий Яковлев</string>
     <string name="main_layout_text">Hello DevIntensive!</string>
     <string name="hint_phone">Мобильный телефон</string>
     <string name="hint_email">E-mail</string>

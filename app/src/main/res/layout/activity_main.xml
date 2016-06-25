@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_phone"
                         android:inputType="phone"
-                        android:text="89248760995"
+                        android:text="8(924)876-09-95"
                         android:enabled="false"
                         android:textColor="@color/black"
                         android:textColorHint="@color/grey"
@@ -88,7 +88,7 @@
     </LinearLayout>
 
     <View
-        style="@style/view_separator"
+        style="@style/view_separator_horizontal"
         />
 
     <LinearLayout
@@ -117,7 +117,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_email"
                     android:inputType="textEmailAddress"
-                    android:text="myMail"
+                    android:text="AiraKobra45@yandex.ru"
                     android:enabled="false"
                     android:textColor="@color/black"
                     android:textColorHint="@color/grey"
@@ -132,7 +132,7 @@
     </LinearLayout>
 
     <View
-        style="@style/view_separator"
+        style="@style/view_separator_horizontal"
         />
 
     <LinearLayout
@@ -143,7 +143,7 @@
         android:layout_marginBottom="@dimen/spacing_small_8">
         <ImageView
             style="@style/icon.left"
-            android:src="@drawable/ic_people_black_24dp"/>
+            android:src="@drawable/ic_vk_circle"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_weight="1"
@@ -176,7 +176,7 @@
     </LinearLayout>
 
     <View
-        style="@style/view_separator"
+        style="@style/view_separator_horizontal"
         />
 
     <LinearLayout
@@ -187,7 +187,7 @@
         android:layout_marginBottom="@dimen/spacing_small_8">
         <ImageView
             style="@style/icon.left"
-            android:src="@drawable/ic_folder_shared_black_24dp"/>
+            android:src="@drawable/ic_github_circle"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_weight="1"
@@ -220,7 +220,7 @@
     </LinearLayout>
 
     <View
-        style="@style/view_separator"
+        style="@style/view_separator_horizontal"
         />
 
     <LinearLayout
@@ -231,7 +231,7 @@
         android:layout_marginBottom="@dimen/spacing_small_8">
         <ImageView
             style="@style/icon.left"
-            android:src="@drawable/ic_email_black_24dp"/>
+            android:src="@drawable/ic_account_circle"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_weight="1"
@@ -264,7 +264,7 @@
     </LinearLayout>
 
     <View
-        style="@style/view_separator"
+        style="@style/view_separator_horizontal"
         />
 
 </LinearLayout>
