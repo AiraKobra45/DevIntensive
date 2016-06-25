@@ -24,4 +24,49 @@
         <item name="android:layout_marginTop">@dimen/spacing_medial_24</item>
         <item name="android:layout_marginRight">@dimen/spacing_medium_32</item>
     </style>
+
+    <style name="view_separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grey_light</item>
+        <item name="android:layout_marginLeft">@dimen/size_large_72</item>
+    </style>
+    <style name="header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/head_height_110</item>
+        <item name="android:background">@color/head_dark_grey</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="header_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="header_number" parent="header_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="header_center">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/size_large_72</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_small_8</item>
+        <item name="android:layout_marginRight">@dimen/spacing_small_8</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="header_left_side" parent="header_center">
+        <item name="android:layout_marginLeft">@dimen/spacing_normal_16</item>
+    </style>
+    <style name="header_right_side" parent="header_center">
+        <item name="android:layout_marginRight">@dimen/spacing_normal_16</item>
+    </style>
+    <style name="view_separator_vertical">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:background">@color/grey_light</item>
+        <item name="android:layout_marginTop">@dimen/spacing_normal_16</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_normal_16</item>
+    </style>
 </resources>
