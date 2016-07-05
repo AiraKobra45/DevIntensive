@@ -255,7 +255,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 userValue.setEnabled(true);
                 userValue.setFocusable(true);
                 userValue.setFocusableInTouchMode(true);
-
             }
         } else {
             mFab.setImageResource(R.drawable.ic_create_black_24dp);
@@ -283,6 +282,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mDataManager.getPreferencesManager().saveUserProfileData(userData);
     }
 
+
     /*private void runWithDelay(){
          final Handler handler = new Handler();
          handler.postDelayed(new Runnable(){
@@ -290,7 +290,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
              public void run() {
                  //TODO: Выполнить с задержкой
                  hideProgress();
-
              }
          }, 5000);
     }*/
