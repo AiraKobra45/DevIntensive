@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">Юрий Владимирович</string>
+    <string name="app_name">Первое приложение</string>
     <string name="main_layout_text">Hello DevIntensive!</string>
     <string name="hint_phone">Мобильный телефон</string>
     <string name="hint_email">E-mail</string>
     <string name="hint_vk_profile">Профиль в VK</string>
     <string name="hint_repository">Репозиторий</string>
     <string name="hint_about_me">О себе</string>
+    <string name="my_command">Команда</string>
+    <string name="my_profile">Мой профиль</string>
 </resources>
