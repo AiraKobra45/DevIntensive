@@ -18,8 +18,6 @@ public class DevintensiveApplication extends Application {
     }
 
     public static SharedPreferences getSharedPreferences() {
-
-
         return sSharedPreferences;
     }
 }
