@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Первое приложение</string>
+    <string name="app_name">Юрий Яковлев</string>
     <string name="main_layout_text">Hello DevIntensive!</string>
     <string name="hint_phone">Мобильный телефон</string>
     <string name="hint_email">E-mail</string>
@@ -8,4 +8,5 @@
     <string name="hint_about_me">О себе</string>
     <string name="my_command">Команда</string>
     <string name="my_profile">Мой профиль</string>
+    <string name="user_profile.placeholder.image">Поменять фото профиля</string>
 </resources>

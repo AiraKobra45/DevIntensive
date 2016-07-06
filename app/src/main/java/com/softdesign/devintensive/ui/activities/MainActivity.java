@@ -1,5 +1,6 @@
 package com.softdesign.devintensive.ui.activities;
 
+import android.content.Intent;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -14,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 
 import com.softdesign.devintensive.R;
@@ -34,8 +36,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private Toolbar mToolbar;
     private DrawerLayout mNavigationDrawer;
     private FloatingActionButton mFab;
+    private RelativeLayout mProfilePlaceholder;
     private EditText mUserPhone, mUserMail, mUserVk, mUserGit, mUserBio;
-
+private ImageView mUserPhoto;
     private List<EditText> mUserInfoViews;
 
     /**
@@ -64,6 +67,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         mNavigationDrawer = (DrawerLayout) findViewById(R.id.navigation_drawer);
         mFab = (FloatingActionButton) findViewById(R.id.fab);
+        mProfilePlaceholder = (RelativeLayout) findViewById(R.id.profile_placeholder);
+
         mUserPhone = (EditText) findViewById(R.id.phone_et);
         mUserMail = (EditText) findViewById(R.id.email_et);
         mUserVk = (EditText) findViewById(R.id.vk_profile_et);
@@ -76,6 +81,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mUserInfoViews.add(mUserVk);
         mUserInfoViews.add(mUserGit);
         mUserInfoViews.add(mUserBio);
+
+        mUserPhoto =(ImageView)findViewById(R.id.user_photo_img);
 
         mFab.setOnClickListener(this);
         //mCallImg.setOnClickListener(this);
@@ -142,7 +149,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void onPause() {
         super.onPause();
         Log.d(TAG, "onPause");
-
+        saveUserInfoValue();
     }
 
     /**
@@ -184,14 +191,17 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         switch (v.getId()){
             //case R.id.call_img:
             case R.id.fab:
-                //showSnackbar("Click On Float Action Button");
+
+                showSnackbar("Click On Float Action Button");
                 if (mCurrentEditMode == 0) {
                     changeEditMode(1);
                     mCurrentEditMode = 1;
+                    showProfilePlaceHolder();
                 }
                 else {
                     changeEditMode(0);
                     mCurrentEditMode = 0;
+                    hideProfilePlaceholder();
                 }
                 /*showProgress();
                 runWithDelay();*/
@@ -232,6 +242,17 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     /**
+     * Получение результата из другой Activity (Фото из камеры или галереи)
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    /**
      * Переключает режим редактирования.
      * Если 1 - режим редактирования, если 0 - режим просмотра.
      * @param mode
@@ -262,7 +283,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 userValue.setEnabled(false);
                 userValue.setFocusable(false);
                 userValue.setFocusableInTouchMode(false);
-                saveUserInfoValue();
             }
         }
     }
@@ -282,6 +302,17 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mDataManager.getPreferencesManager().saveUserProfileData(userData);
     }
 
+    private void loadPhotoFromCamera(){
+
+    }
+
+    private void hideProfilePlaceholder(){
+        mProfilePlaceholder.setVisibility(View.INVISIBLE);
+    }
+
+    private void showProfilePlaceHolder(){
+        mProfilePlaceholder.setVisibility(View.VISIBLE);
+    }
 
     /*private void runWithDelay(){
          final Handler handler = new Handler();
